@@ -99,6 +99,7 @@ def get_hi_res_images(browser):
     find_url = html_soup.find_all('a', class_='product-item')
 
     hemisphere_image_urls = []
+    hemisphere_img_description = []
 
     for f in find_url:
         if len(f.text) > 0 and 'Back' not in f.text:
